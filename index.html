@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
+<style>
+ #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    width:95%;
+    cursor: pointer;
+    animation:mover 2s linear infinite;
+    transition:1s;
+}
+
+@keyframes mover{
+50%{
+      transform:translateY(-20%)
+}
+}
+</style>
 <head>
 <meta charset="utf-8">
 <title>Eswaran-Portfolio</title>
@@ -7,19 +24,57 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
 </head>
 <body>
   <div class="top-container">
     <img class="top-cloud" src="Images/cloud.png" alt="cloud-image">
-    <h1>I'm Muthu Eswaran</h1>
-    <h2>a Web Developer</h2>
     <img class="bottom-cloud" src="Images/cloud1.png" alt="cloud-image">
+    <h1>I'm Muthu Eswaran</h1>
+    <h2>a Web Developer</h2><br>
   </div>
   <div class="middle-container">
     <div class="profile">
-      <img class="mydb" src="Images/My_Profile.png" alt="My_Profile" height:200px">
-      <h2 style="font-size:38px">Hello</h2>
-      <p class="intro">I'm Muthu Eswaran.I'm a Web Developer</p>
+      <img class="mydb" src="Images/My_Profile.png" alt="My_Profile" height:200px"><br><br><br>
+      <span class="animetion" style="--i:1">H</span>
+      <span class="animetion" style="--i:2">e</span>
+      <span class="animetion" style="--i:3">l</span>
+      <span class="animetion" style="--i:4">l</span>
+      <span class="animetion" style="--i:5">o</span>
+      <span class="animetion" style="--i:6">,</span>
+      <span class="animetion" style="--i:7">W</span>
+      <span class="animetion" style="--i:8">e</span>
+      <span class="animetion" style="--i:9">l</span>
+      <span class="animetion" style="--i:10">c</span>
+      <span class="animetion" style="--i:11">o</span>
+      <span class="animetion" style="--i:12">m</span>
+      <span class="animetion" style="--i:13">e</span>
+      <span class="animetion" style="--i:14"> </span>
+      <span class="animetion" style="--i:15">T</span>
+      <span class="animetion" style="--i:16">o</span>
+      <span class="animetion" style="--i:17"> </span>
+      <span class="animetion" style="--i:18">M</span>
+      <span class="animetion" style="--i:19">y</span>
+      <span class="animetion" style="--i:20"> </span>
+      <span class="animetion" style="--i:21">P</span>
+      <span class="animetion" style="--i:22">a</span>
+      <span class="animetion" style="--i:23">g</span>
+      <span class="animetion" style="--i:24">e</span><br><br><br>
+      <p class="intro">I am Muthu Eswaran, I'm a Web Developer</p>
     </div>
     <hr>
     <div class="skills">
@@ -42,7 +97,7 @@
         <p>I'm able to write basic SQL quries including creating and modifying tables,inserting and retriving data from tables</p>
       </div>
       <div class="skill-row">
-        <img class="skill-image2" src="Images/C|EH.jpeg" alt="Image">
+        <img class="skill-image2" src="Images/C|EH.png" alt="Image">
         <h2>Ethical Hacker</h2>
         <p>I am having basic knowledge of Ethical Hacking.I am using it only for Developing my skills and Hacking is one of my entertainment</p>
         <p>During my lesuire time I Develop my Hacking Skills using Hack The Box</p>
@@ -50,11 +105,13 @@
     </div>
     <hr>
     <div class="bottom-container">
-      <a class="footer-link" href="mailto:muthueswaran27092004@gmail.com"><img style="width:40px" class="logo" src="Images/gmail.png"></a>
-      <a class="footer-link" href="https://twitter.com/DEswaran9""><img class="logo" src="Images/twitter1.png"></a>
-      <a class="footer-ling" href="https://wa.me/+919342994698/"><img class="logo" src="Images/whatsapp.png"></a>
-      <a class="footer-link" href="https://www.linkedin.com/in/muthu-eswaran-06938326b/"><img class="logo" src="Images/linkdn1.png"></a>
+      <a href="mailto:muthueswaran27092004@gmail.com" target="_blank"><img style="width:40px" class="logo" src="Images/gmail.png"></a>
+      <a href="https://twitter.com/DEswaran9"" target="_blank"><img class="logo" src="Images/twitter.webp"></a>
+      <a href="https://wa.me/+919342994698/" targer="_blank"><img class="logo" src="Images/whatsapp.png"></a>
+      <a href="https://www.linkedin.com/in/muthu-eswaran-06938326b/" target="blank"><img class="logo" src="Images/linkdn1.png"></a>
+      <a href="https://github.com/eswaran2709/Portfolio" target="_blank"><img class="logo" src="Images/github.png"></a>
       <p class="copyright">&copy 2023 Muthu Eswaran.</p>
+      <a onclick="topFunction()" id="myBtn"><img src="Images/scroll-up.png" alt="scroll-up"></a>
     </div>
 </body>
 </html>
